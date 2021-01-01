@@ -12,6 +12,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { MatIconModule } from '@angular/material/icon';
     LoginComponent,
     DashboardComponent,
     LayoutComponent,
-    SidebarComponent
+    SidebarComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
