@@ -9,7 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 const routes: Routes = [
   { path: 'signup', component: SignUpComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
   { path: '', component: LoginComponent }
