@@ -5,6 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BooksCollectionComponent } from './books-collection/books-collection.component';
+import { AuthentificationGuard } from './authentification.guard';
 
 const routes: Routes = [
   { path: 'signup', component: SignUpComponent },
@@ -12,7 +14,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
-  { path: '', component: LoginComponent }
+  { path: '', component: LoginComponent },
+  { path: 'booksMain', component: BooksCollectionComponent, canActivate: [AuthentificationGuard] }
 ];
 
 @NgModule({

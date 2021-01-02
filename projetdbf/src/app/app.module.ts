@@ -14,6 +14,13 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { AuthentificationService } from './authentification.service';
+import { BooksService } from './books.service';
+import { BooksCollectionComponent } from './books-collection/books-collection.component';
+import { AuthentificationGuard } from './authentification.guard';
+import { TokenInterceptorService } from './token-interceptor.service';
 
 
 @NgModule({
@@ -25,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     LayoutComponent,
     SidebarComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BooksCollectionComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +41,17 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+
+  providers: [AuthentificationService, BooksService, AuthentificationGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true
+    }],
   bootstrap: [AppComponent]
 })
 
