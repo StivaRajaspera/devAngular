@@ -13,14 +13,14 @@ export class LoginComponent implements OnInit {
 
 
   signupUserData = {
-    name: String,
-    email: String,
-    password: String
+    name: '',
+    email: '',
+    password: ''
   }
 
   loginUserData = {
-    email: String,
-    password: String
+    email: '',
+    password: ''
   }
 
   constructor(private _auth: AuthentificationService, private _router: Router) { }
