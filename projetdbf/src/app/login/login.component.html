@@ -19,22 +19,24 @@
 
                 <div class="col-sm-10">
                     <div class="form-floating ">
-                        <input type="text" class="form-control input-sm" id="floatingInputNom" placeholder="Nom">
+                        <input [(ngModel)]="signupUserData.name" name="name" type="text" class="form-control input-sm"
+                            id="floatingInputNom" placeholder="Nom">
                         <label for="floatingInput">Nom</label>
                     </div>
                 </div>
 
                 <div class="col-sm-10">
                     <div class="form-floating">
-                        <input type="text" class="form-control input-sm" id="floatingInputMailSign"
-                            placeholder="abc@example.fr">
+                        <input [(ngModel)]="signupUserData.email" name="email" type="text" class="form-control input-sm"
+                            id="floatingInputMailSign" placeholder="abc@example.fr">
                         <label for="floatingInputMailSign">Adresse E-mail</label>
                     </div>
                 </div>
 
                 <div class="col-sm-10">
                     <div class="form-floating">
-                        <input type="password" class="form-control input-sm" id="floatingInputMdp" placeholder="12345">
+                        <input [(ngModel)]="signupUserData.password" name="password" type="password"
+                            class="form-control input-sm" id="floatingInputMdp" placeholder="12345">
                         <label for="floatingInputMdp">Mot de passe</label>
                     </div>
                 </div>
@@ -47,7 +49,7 @@
                     </div>
                 </div>
 
-                <button>Enregistrer</button>
+                <button (click)="saveUserInformation()">Enregistrer</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
@@ -56,23 +58,23 @@
 
                 <div class="col-sm-10">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control input-sm" id="floatingInputMail"
-                            placeholder="name@example.com">
+                        <input [(ngModel)]="loginUserData.email" name="email" type="email" class="form-control input-sm"
+                            id="floatingInputMail" placeholder="name@example.com">
                         <label for="floatingInputMail">Adresse E-mail</label>
                     </div>
                 </div>
 
                 <div class="col-sm-10">
                     <div class="form-floating">
-                        <input type="password" class="form-control input-sm" id="floatingPassword"
-                            placeholder="Password">
+                        <input [(ngModel)]="loginUserData.password" name="password" type="password"
+                            class="form-control input-sm" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Mot de passe</label>
                     </div>
                 </div>
 
 
                 <a href="#">Mot de passe oublié?</a>
-                <button>Se connecter</button>
+                <button (click)="loginUser()">Se connecter</button>
             </form>
         </div>
         <div class="overlay-container">
