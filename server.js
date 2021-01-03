@@ -6,6 +6,10 @@ const PORT = 3000
 const app = express()
 app.use(cors())
 
+app.use(bodyParser.urlencoded({
+    extended: false
+}
+))
 const api = require('./routes/api')
 app.use(bodyParser.json())
 
