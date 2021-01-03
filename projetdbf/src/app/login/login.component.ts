@@ -3,6 +3,7 @@ import { AuthentificationService } from '../authentification.service';
 import { Router } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,9 +12,16 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
 
-  signupUserData = {}
+  signupUserData = {
+    name: String,
+    email: String,
+    password: String
+  }
 
-  loginUserData = {}
+  loginUserData = {
+    email: String,
+    password: String
+  }
 
   constructor(private _auth: AuthentificationService, private _router: Router) { }
 
