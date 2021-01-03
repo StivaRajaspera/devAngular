@@ -1,3 +1,24 @@
-p{
+
+.image{
+    background-image: linear-gradient(rgba(71, 71, 219, 0.5), rgba(131, 153, 212, 0.5)), url("../../assets/img/livreplage.jpg");
     text-align: center;
-} 
+    color: white;
+    
+}
+span{
+    font-size:15px;
+}
+
+a{
+  text-decoration:none; 
+  color: white;
+}
+h5{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.maps{
+    width: 300px;
+    height: 200px;
+}

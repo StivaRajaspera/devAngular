@@ -1,0 +1,83 @@
+<div class="alert alert-danger"role="alert">
+    Attention ! changement d'horaire Covid-19, <a href="#dede">Cliquez-ici pour plus d'informations</a>
+</div>
+<div class="image">
+        <h1 class="elegantshd">Bienvenue à la bibliothèque</h1>
+        <h1>Les livres les mieux notés</h1>
+        <div class="box">
+            <div class="container">
+                <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-4 col-xs-12">
+                            <mdb-carousel [isControls]="false" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+                                    <mdb-carousel-item *ngFor="let item of slides; let i = index">
+                                        <div class="col-sm-4 pb-2" *ngFor="let card of item; let cardIndex = index">
+                                        <mdb-card class="my-1 h-10">
+                                            <mdb-card-img  class [src]="card.img" alt="Card image cap"> </mdb-card-img>
+                                            <mdb-card-body>
+                                                <mdb-card-title>
+                                                    <h4>{{card.title}}</h4>
+                                                </mdb-card-title>
+                                                <p>{{card.description}}</p>
+                                            </mdb-card-body>
+                                    </mdb-card>
+                                    </div>
+                            </mdb-carousel-item>
+                        </mdb-carousel>
+                     </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                        <div class="box-part text-center">
+                            <img src="../../assets/img/evenement.jpg" class="img1"/>
+                            <div class="title">
+                                <h4>Rejoignez-nous : le lauréat du prix du livre est annoncé en direct le 14 janvier</h4>
+                            </div>
+                            <div class="text">
+                                <span>Le lauréat du Prix du Livre American Library in Paris 2020
+                                     sera annoncé le 14 janvier à 19h30 CET, en direct sur Zoom. La soirée comprendra une conférence de l’auteur lauréat, un hommage aux partisans de la Bibliothèque, des remarques du jury au sujet des six livres présélectionnés et de nombreuses autres surprises spéciales.
+
+                                    Des billets numériques pour la cérémonie sont maintenant 
+                                    disponibles. Pour la première fois, l’événement sera ouvert au public, et il n’y a pas de frais pour y assister. Veuillez vous inscrire ci-dessous pour être ajouté à la liste des invités de l’événement; les informations de connexion vous seront envoyées en janvier.
+                                    
+                                    La cérémonie de remise du Prix du livre est le plus 
+                                    important événement d’appréciation des donateurs de l’année de la Bibliothèque. Si vous n’avez pas fait de don cette année et que vous souhaitez vous joindre aux centaines de partisans qui ont fait une contribution en 2020, veuillez utiliser le bouton de don sur</span>
+                            </div>
+                            <a href="https://americanlibraryinparis.org">Learn More</a>
+                        </div>
+                    </div>	 
+                    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
+                        <div class="box-part text-center">
+
+                            <img src="../../assets/img/oeil.jpg" class="img2"/>
+                            <div class="title">
+                                <h4>Panel spécial sur le changement dans le temps en matière de technologie et d’éthique - de 2000 à 2021 [Événement public virtuel</h4>
+                            </div>
+                            <div class="text">
+                                <span> Cette table ronde spéciale, animée par Christine Finn et au cours de laquelle Nicholas Hall et Mike Cassidy discuteront des enjeux liés à la technologie et à notre relation avec son éthique. Finn a d’abord interviewé les participants en 2000 tout en adoptant un point de vue de gauche sur la technologie grâce à sa culture matérielle en rapide évolution (Artifacts : an archaeologist’s year in Silicon Valley : MIT Press 2001). Ils couvriront l’état de la technologie autour de l’an 2000, avant et après l’éclatement de la bulle dot com, à travers l’ère des startups, les débuts des médias sociaux comme un moyen bénin de connecter les gens et les idées, et les applications pour rendre la vie plus simple, à nos préoccupations actuelles au sujet des médias sociaux qui nous rendent vulnérables et divisés par la technologie. Bien que l’innovation ait le potentiel d’être positive </span>
+                            </div>
+                            <a href="https://americanlibraryinparis.org/event/a-special-panel-on-change-over-time-in-technology-and-ethics/">Learn More</a>
+                        </div>
+                    </div>	
+                    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
+                        <div class="box-part text-center">
+
+                            <img src="../../assets/img/oeil.jpg" class="img2"/>
+                            <div class="title">
+                                <h4>Panel spécial sur le changement dans le temps en matière de technologie et d’éthique - de 2000 à 2021 [Événement public virtuel</h4>
+                            </div>
+                            <div class="text">
+                                <span> Cette table ronde spéciale, animée par Christine Finn et au cours de laquelle Nicholas Hall et Mike Cassidy discuteront des enjeux liés à la technologie et à notre relation avec son éthique. Finn a d’abord interviewé les participants en 2000 tout en adoptant un point de vue de gauche sur la technologie grâce à sa culture matérielle en rapide évolution (Artifacts : an archaeologist’s year in Silicon Valley : MIT Press 2001). Ils couvriront l’état de la technologie autour de l’an 2000, avant et après l’éclatement de la bulle dot com, à travers l’ère des startups, les débuts des médias sociaux comme un moyen bénin de connecter les gens et les idées, et les applications pour rendre la vie plus simple, à nos préoccupations actuelles au sujet des médias sociaux qui nous rendent vulnérables et divisés par la technologie. Bien que l’innovation ait le potentiel d’être positive </span>
+                            </div>
+                            <a href="https://americanlibraryinparis.org/event/a-special-panel-on-change-over-time-in-technology-and-ethics/">Learn More</a>
+                        </div>
+                    </div>	
+                    
+            </div>		
+        </div>
+    </div>
+</div>
